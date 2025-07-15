@@ -1,0 +1,75 @@
+Структура папок
+Серийный номер тома: 3A75-DFE0
+C:\XAMPP\HTDOCS\SYNCLICK
+|   structure.txt
+|   
++---assets
+|   +---css
+|   |       colors.css
+|   |       colors.less
+|   |       main.css
+|   |       main.less
+|   |       
+|   +---fonts
+|   +---images
+|   |   +---components
+|   |   |       flat.svg
+|   |   |       tinsel.svg
+|   |   |       wave.svg
+|   |   |       
+|   |   +---icons
+|   |   |       facebook.svg
+|   |   |       google+.svg
+|   |   |       group.svg
+|   |   |       pokemon.svg
+|   |   |       share.svg
+|   |   |       telegram.svg
+|   |   |       vk.svg
+|   |   |       youtube.svg
+|   |   |       
+|   |   +---illustration
+|   |   |       cosmoman.png
+|   |   |       elifant.png
+|   |   |       girlidea.png
+|   |   |       
+|   |   \---logos
+|   |           logo-with-name.png
+|   |           main-logo-black.svg
+|   |           main-logo-light.svg
+|   |           
+|   +---js
+|   |       script.js
+|   |       
+|   \---vendors
++---backend
+|   |   auth.php
+|   |   db.php
+|   |   mail.php
+|   |   saveLead.php
+|   |   
+|   \---database
+|           schema.sql
+|           
++---includes
+|       footer.php
+|       head.php
+|       header.php
+|       scripts.php
+|       
++---pages
+|   |   projects-detail.php
+|   |   
+|   \---team
+|           maxvoices.php
+|           
++---public
+|       index.php
+|       
+\---sections
+        about.php
+        contact.php
+        cooperation.php
+        main.php
+        projects.php
+        team.php
+        
