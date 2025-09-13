@@ -52,7 +52,7 @@
   border: 20px solid transparent;
   border-right: 20px solid #ffffff;
   width: 100vw;
-  left: -102vw;
+  left: -100vw;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
@@ -102,8 +102,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6px;
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   cursor: pointer;
   padding: 6px;
   border-radius: 8px;
@@ -138,13 +138,12 @@
   height: 100%;
 }
 .main_block_header .main_panel .socials .after-items .socials_item {
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 5px;
   border: 1px solid #ffffff;
   border-radius: 100%;
   transition: all 0.3s ease;
@@ -157,10 +156,13 @@
 .main_block_header .main_panel .socials .after-items .socials_item a {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main_block_header .main_panel .socials .after-items .socials_item a img {
-  width: 100%;
-  height: 100%;
+  width: 30px;
+  height: 50%;
 }
 .main_block_header .main_panel .socials .after-items:not(:last-child)::after {
   display: block;
@@ -219,8 +221,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  gap: 35px;
+  gap: 60px;
   background: #272727;
+  z-index: 20;
   transform: translateX(-100%);
   /* скрыто слева */
   transition: transform 0.5s ease;
@@ -233,6 +236,9 @@
   text-decoration: none;
   z-index: 1;
   transition: 0.3s all;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
 }
 .menu_content_mobile .m_burger_menu__item a:hover {
   color: #c8c8c8;
@@ -242,6 +248,9 @@
   /* показываем меню */
 }
 @media (max-width: 700px) {
+  .containers {
+    padding-left: 0 !important;
+  }
   .main_block_header {
     display: none;
   }
