@@ -1,23 +1,29 @@
 <?php include_once 'head.php'; ?>
-<link rel="stylesheet" href="../assets/css/header.css">
+
 
 <div class="main_block_header">
     <div class="menu_content">
         <div class="content-desktop">
             <div class="burger_menu__item">
-                <a href="#" class="burger_menu__link">Главная</a>
+                <a href="#main" class="burger_menu__link">Главная</a>
             </div>
             <div class="burger_menu__item">
-                <a href="#" class="burger_menu__link">О нас</a>
+                <a href="#about" class="burger_menu__link">О нас</a>
             </div>
             <div class="burger_menu__item">
-                <a href="#" class="burger_menu__link">Наши проекты</a>
+                <a href="#projects" class="burger_menu__link">Наши проекты</a>
             </div>
             <div class="burger_menu__item">
-                <a href="#" class="burger_menu__link">Контакты</a>
+                <a href="#contacts" class="burger_menu__link">Контакты</a>
             </div>
             <div class="burger_menu__item">
-                <a href="#" class="burger_menu__link">Сотрудничество</a>
+                <a href="#team" class="burger_menu__link">Наша команда</a>
+            </div>
+            <div class="burger_menu__item">
+                <a href="#order" class="burger_menu__link">Заказать проект</a>
+            </div>
+            <div class="burger_menu__item">
+                <a href="#cooperation" class="burger_menu__link">Сотрудничество</a>
             </div>
         </div>
     </div>
@@ -101,19 +107,25 @@
 </div> <!-- /.main_block_header_mobile -->
 <div class="menu_content_mobile">
         <div class="m_burger_menu__item">
-            <a href="#" class="burger_menu__link">Главная</a>
+            <a href="#main" class="burger_menu__link">Главная</a>
         </div>
         <div class="m_burger_menu__item">
-            <a href="#" class="burger_menu__link">О нас</a>
+            <a href="#about" class="burger_menu__link">О нас</a>
         </div>
         <div class="m_burger_menu__item">
-            <a href="#" class="burger_menu__link">Наши проекты</a>
+            <a href="#projects" class="burger_menu__link">Наши проекты</a>
         </div>
         <div class="m_burger_menu__item">
-            <a href="#" class="burger_menu__link">Контакты</a>
+            <a href="#team" class="burger_menu__link">Наша команда</a>
         </div>
         <div class="m_burger_menu__item">
-            <a href="#" class="burger_menu__link">Сотрудничество</a>
+            <a href="#contacts" class="burger_menu__link">Контакты</a>
+        </div>
+        <div class="m_burger_menu__item">
+            <a href="#order" class="burger_menu__link">Заказать проект</a>
+        </div>
+        <div class="m_burger_menu__item">
+            <a href="#cooperation" class="burger_menu__link">Сотрудничество</a>
         </div>
     </div>
-<script src="../assets/js/header.js"></script>
+

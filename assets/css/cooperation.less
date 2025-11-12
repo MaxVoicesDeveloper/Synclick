@@ -1,0 +1,118 @@
+.cooperation-page {
+    position: relative;
+    background-color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    .main-block-cooperation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        .forms {
+            .form-cop-main {
+                background: #2C2C2C;
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding: 30px;
+
+                .form-cop {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 20px;
+                    background: #323232;
+                    border-radius: 20px;
+                    padding: 10px;
+                    height: 450px;
+
+                    .inp-cop {
+                        width: 70%;
+                        border-radius: 10px;
+                        border: none;
+                        padding: 10px;
+                        color: #777777;
+                        background: #444444;
+                    }
+
+                    .button_send {
+                        border: none;
+                        background: #1F1F1F;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 45%;
+                        padding: 15px;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        font-size: 1.2em;
+                        color: #ffffff;
+                        letter-spacing: 4px;
+                        transition: 0.5s all;
+
+                        &:hover {
+                            filter: brightness(1.2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .design-elements {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            .cosmo-man {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.title-form {
+    font-family: 'Open-Sans';
+    font-size: 4em;
+    @media (max-width: 700px){
+        font-size: 2em;
+    }
+    color: #ffffff;
+}
+
+@media(max-width: 1024px) {
+    .cooperation-page {
+        .title {
+            display: none;
+        }
+
+        .main-block-cooperation {
+            display: flex;
+
+            .forms {
+                .form-cop-main {
+                    .form-cop {
+                        .button_send{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+
+            .design-elements {
+                display: none;
+            }
+        }
+    }
+}

@@ -2,7 +2,6 @@ const button = document.querySelector('.grid-button');
 const header_panel = document.querySelector('.main_block_header');
 const menu_items = document.querySelectorAll('.burger_menu__item');
 
-// Получаем правила ::before и ::after
 const beforeRules = [];
 const afterRules = [];
 
@@ -11,7 +10,6 @@ menu_items.forEach((item, i) => {
   afterRules.push(CSSRulePlugin.getRule(`.burger_menu__item:nth-child(${i + 1})::after`));
 });
 
-// Скрываем всё изначально
 gsap.set(menu_items, { x: "-100%", opacity: 0 });
 beforeRules.forEach(rule => gsap.set(rule, { cssRule: { left: "-100vw" } }));
 afterRules.forEach(rule => gsap.set(rule, { cssRule: { left: "-102vw" } }));
@@ -90,6 +88,14 @@ button.addEventListener('click', (e) => {
 // Отслеживаем клики по всему документу
 document.addEventListener('click', (e) => {
   // Если клик вне меню и вне кнопки — закрываем меню
+  const button_link = document.querySelectorAll('.burger_menu__link');
+  button_link.forEach(button => {
+    if (button.contains(e.target)) {
+      if (header_panel.classList.contains('opened')) {
+        closeMenu();
+      }
+    }
+  });
   if (!header_panel.contains(e.target) && !button.contains(e.target)) {
     if (header_panel.classList.contains('opened')) {
       closeMenu();

@@ -29,7 +29,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 50px;
+            gap: 30px;
 
             .burger_menu__item {
                 position: relative;
@@ -64,7 +64,7 @@
                 }
 
                 a {
-                    font-size: 4em;
+                    font-size: 3em;
                     color: #ffffff;
                     text-decoration: none;
                     z-index: 1;
@@ -256,11 +256,12 @@
     gap: 60px;
     background: #272727;
     z-index: 20;
-    transform: translateX(-100%); /* скрыто слева */
-    transition: transform 0.5s ease; /* плавный выезд */
+    transform: translateX(-100%); 
+    transition:  0.5s ease; 
+    opacity: 0;
         .m_burger_menu__item {
             a {
-                font-size: 3em; // меньше чем на десктопе
+                font-size: 3em; 
                 font-weight: 500;
                 color: #ffffff;
                 text-decoration: none;
@@ -278,10 +279,11 @@
 
     
 .menu_content_mobile.opened {
-    transform: translateX(0); /* показываем меню */
+    transform: translateX(0); 
+    opacity: 1;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .containers{
         padding-left: 0 !important;
     }

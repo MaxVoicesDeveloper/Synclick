@@ -13,6 +13,40 @@ body {
 
 .containers {
     padding-left: 120px;
+    padding-right: 20px;
+    min-height: 100vh;
+    .title {
+        font-family: 'Open-Sans';
+        font-size: 85px;
+        color: #ffffff;
+
+         @media (max-width: 700px){
+            font-size: 40px;
+        }
+
+        @media (max-width: 500px){
+            font-size: 30px;
+        }
+    }
+    
+}
+
+
+.back-cont{
+    &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        background: url('../images/logos/synapses-logo.svg') no-repeat center center;
+        background-size: contain; 
+        transform: translate(-50%, -50%);
+        opacity: 0.02;
+        z-index: 1;
+        pointer-events: none;
+    }
 }
 
 .main-page {
@@ -93,7 +127,7 @@ body {
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 1024px){
     .container{
         padding-left: 0;
     }
@@ -123,4 +157,4 @@ body {
             display: none;
         }
     }
-}
+}   

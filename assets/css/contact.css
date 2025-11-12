@@ -1,0 +1,43 @@
+.contacts {
+  background: #363636;
+}
+.contacts .title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contacts .contacts-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.contacts .contacts-main .contacts-info-element {
+  padding-left: 6rem;
+  font-size: 2em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  gap: 30px ;
+}
+@media (max-width: 1024px) {
+  .contacts .contacts-main .contacts-info-element {
+    width: 100%;
+  }
+}
+.contacts .contacts-main .contacts-info-element .social-block {
+  width: 100%;
+}
+.contacts .contacts-main .contacts-info-element .social-block .number span,
+.contacts .contacts-main .contacts-info-element .social-block .mail span,
+.contacts .contacts-main .contacts-info-element .social-block .worked span {
+  width: 100%;
+  font-size: 1em;
+}
+.contacts .contacts-main .contacts-design-element .contacts-image {
+  width: 100%;
+  height: 100%;
+}
