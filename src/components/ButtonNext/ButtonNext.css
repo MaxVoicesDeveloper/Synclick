@@ -1,0 +1,21 @@
+.main-page .welcome-text .button-interesting {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s all;
+}
+.main-page .welcome-text .button-interesting::after {
+  content: url("../images/icons/pokemon.svg");
+}
+
+@media (max-width: 1024px) {
+  .main-page .welcome-text .button-interesting {
+    font-size: 20px;
+  }
+}
