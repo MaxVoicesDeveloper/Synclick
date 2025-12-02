@@ -1,0 +1,123 @@
+.opened {
+    transform: translateX(0) !important;
+}
+
+
+
+.main_block_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 960px;
+    height: 100%;
+    background: #272727;
+    z-index: 1000;
+    transition: transform 0.3s ease-out;
+    transform: translateX(-850px);
+    display: grid;
+    grid-template-columns: 850px 1fr;
+}
+
+
+.main_block_header_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #272727;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+
+    .panel_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .mobile-flex-button-burger {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            padding: 6px;
+            border-radius: 8px;
+            transition: 0.2s ease;
+
+            span {
+                width: 100%;
+                height: 4px;
+                background-color: #ffffff;
+                border-radius: 2px;
+                display: block;
+                transition: background-color 0.2s ease;
+            }
+
+            &:active {
+                transform: scale(0.8);
+            }
+        }
+    }
+}
+
+.menu_content_mobile {
+    display: none;
+         position: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    gap: 60px;
+    background: #272727;
+    z-index: 20;
+    transform: translateX(-100%); 
+    transition:  0.5s ease; 
+    opacity: 0;
+        .m_burger_menu__item {
+            a {
+                font-size: 3em; 
+                font-weight: 500;
+                color: #ffffff;
+                text-decoration: none;
+                z-index: 1;
+                transition: 0.3s all;
+                padding: 10px;
+                border: 1px solid #ffffff;
+                border-radius: 15px;
+                &:hover {
+                    color: #c8c8c8;
+                }
+            }
+        }
+    }
+
+    
+.menu_content_mobile.opened {
+    transform: translateX(0); 
+    opacity: 1;
+}
+
+@media (max-width: 1024px) {
+    .containers{
+        padding-left: 0 !important;
+    }
+
+    .main_block_header {
+        display: none;
+    }
+
+    .main_block_header_mobile {
+        display: flex;
+    }
+
+    .menu_content_mobile{
+        display: flex;
+    }
+}

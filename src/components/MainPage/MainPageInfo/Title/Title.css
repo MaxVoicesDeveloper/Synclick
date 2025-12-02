@@ -1,0 +1,10 @@
+.name {
+  color: #FBF8F5;
+  font-weight: 500;
+  font-size: 85px;
+}
+@media (max-width: 1024px) {
+  .name {
+    font-size: 30px;
+  }
+}

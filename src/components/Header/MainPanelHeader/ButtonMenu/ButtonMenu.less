@@ -1,0 +1,31 @@
+.panel_buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            .grid-button {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                padding: 6px;
+                border-radius: 8px;
+                transition: 0.2s ease;
+
+                span {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                    display: block;
+                    transition: background-color 0.2s ease;
+                }
+
+                &:active {
+                    transform: scale(0.8);
+                }
+            }
+        }
