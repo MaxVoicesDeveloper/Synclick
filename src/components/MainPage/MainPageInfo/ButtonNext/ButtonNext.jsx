@@ -1,5 +1,5 @@
 import './buttonNext.css'
 
-export default function ButtonNext({ children, className }){
-    return <button className={ className }>{  children  }</button>
+export default function ButtonNext({ children, variant="primary" }){
+    return <button className={`button-interesting button--${variant}`}>{children}</button>
 }

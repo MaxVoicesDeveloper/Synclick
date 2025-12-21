@@ -22,7 +22,7 @@
   border: 20px solid transparent;
   border-right: 20px solid #ffffff;
   width: 100vw;
-  left: -102vw;
+  left: -100vw;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;

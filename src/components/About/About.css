@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'JuliusSansOne';
-  src: url("../fonts/Julius-Sans-One/JuliusSansOne-Regular.ttf");
+  src: url("../../fonts/Julius-Sans-One/JuliusSansOne-Regular.ttf");
 }
 .about-page {
   display: flex;

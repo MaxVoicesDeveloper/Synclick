@@ -1,9 +1,9 @@
 import './Title.css'
 
-export default function Title(){
+export default function Title({children}){
     return(
         <>
-            <span className="name">Добро пожаловать в Synclick</span>
+            <span className="name">{children}</span>
         </>
     )
 }
