@@ -1,4 +1,4 @@
-import ButtonNext from './MainPageInfo/ButtonNext/ButtonNext.jsx'
+import ButtonNext from '../ButtonNext/ButtonNext.jsx'
 import Description from './MainPageInfo/Description/Description.jsx'
 import Title from './MainPageInfo/Title/Title.jsx'
 import './MainPage.css'
@@ -12,7 +12,7 @@ export default function MainPage(){
             Без лишних процессов и размытых сроков.
             </Description>
            <div className="buttons d-flex gap-3">
-            <ButtonNext variant="primary">Обсудить проект</ButtonNext>
+            <ButtonNext variant="primary" modal={true}>Обсудить проект</ButtonNext>
             <ButtonNext variant='secondary'>Посмотреть работы</ButtonNext>
            </div>
         </div>

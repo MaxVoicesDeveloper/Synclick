@@ -1,0 +1,19 @@
+.modal .modal-dialog .modal-content form .modal-footer .btn-primary {
+  background-color: #7e2c2c;
+  border-color: #7e2c2c;
+}
+.modal .modal-dialog .modal-content .form-control {
+  background-color: #495057;
+  color: #f8f9fa;
+  border-color: #6c757d;
+}
+.modal .modal-dialog .modal-content .form-control::placeholder {
+  color: #ced4da;
+  opacity: 1;
+}
+.modal .modal-dialog .modal-content .form-control:focus {
+  background-color: #495057;
+  color: #f8f9fa;
+  border-color: #7e2c2c;
+  box-shadow: 0 0 0 0.2rem rgba(126, 44, 44, 0.25);
+}
