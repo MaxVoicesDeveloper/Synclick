@@ -8,13 +8,13 @@ export default function Modal(){
 
       <form>
         <div class="modal-header">
-          <h5 class="modal-title">Оставьте заявку - мы свяжемся с вами</h5>
+          <h5 class="modal-title fs-2">Оставьте заявку - мы свяжемся с вами</h5>
           <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"></button>
         </div>
-        <div className="form-text px-4 py-2 text-white-50">
-            Расскажите коротко о задаче. Мы изучим запрос, предложим решение и обозначим сроки и стоимость без навязывания лишнего.
+        <div className="form-text px-4 pt-3 text-white-50 fs-6">
+           Начните прямо сейчас - получите персональное решение под вашу задачу без лишней болтовни!
         </div>
-        <div class="modal-body px-4">
+        <div class="modal-body px-4 pb-0">
             <div class="form-floating mb-3">
                 <input
                     type="text"
@@ -46,7 +46,9 @@ export default function Modal(){
             </div>
 
         </div>
-
+        <div className="form-text px-4 pb-4 text-white-50 fs-6">
+            Расскажите коротко о задаче. Мы изучим запрос, предложим решение и обозначим сроки и стоимость без навязывания лишнего.
+        </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-primary w-100">
             Отправить заявку

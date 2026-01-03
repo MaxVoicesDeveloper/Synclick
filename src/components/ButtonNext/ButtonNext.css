@@ -1,4 +1,4 @@
-.main-page .welcome-text .button-interesting {
+.button-interesting {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -9,19 +9,6 @@
   cursor: pointer;
   font-size: 20px;
   transition: 0.1s all;
-}
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 20px;
-  border-radius: 15px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  transition: 0.3s ease;
-  text-decoration: none;
 }
 .button--primary {
   background-color: #9C3737;
