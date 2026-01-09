@@ -9,9 +9,15 @@
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/backgrounds/technology.png');
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
   position: relative;
   height: 100%;
   font-family: 'JuliusSansOne';
+}
+@media (max-width: 1400px) {
+  .about-page {
+    background: #363636;
+  }
 }
 .about-page::before {
   content: '';
@@ -22,6 +28,12 @@
   height: 100%;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1400px) {
+  .about-page::before {
+    display: none;
+  }
 }
 .about-page .about-text {
   color: #ffffff;
