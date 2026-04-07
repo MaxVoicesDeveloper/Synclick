@@ -18,7 +18,7 @@ export default function Header() {
                     </a>
                 </div>
                 <div className="panel_buttons">
-                    <div className="mobile-flex-button-burger" aria-label="Open menu" role="button" tabindex="0">
+                    <div className="mobile-flex-button-burger" aria-label="Open menu" role="button" tabIndex="0">
                         <span></span><span></span><span></span>
                     </div>
                 </div>

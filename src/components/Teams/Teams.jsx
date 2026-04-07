@@ -1,5 +1,6 @@
 import './Teams.css'
 import { useEffect } from 'react'
+import { Navigation, Pagination, Keyboard } from 'swiper/modules'
 
 import Swiper from 'swiper'
 import 'swiper/css'
@@ -8,45 +9,39 @@ import 'swiper/css/pagination'
 
 export default function Teams() {
 useEffect(() => {
-    const swiper = new Swiper('.swiper', {
-      keyboard: true,
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.custom-swiper-button-next',
-        prevEl: '.custom-swiper-button-prev',
+  const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Pagination, Keyboard],
+    loop: true,
+    keyboard: true,
+    spaceBetween: 20,
+
+    navigation: {
+      nextEl: '.custom-swiper-button-next',
+      prevEl: '.custom-swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1.2,
+        spaceBetween: 16,
       },
-      pagination: {
-        el: '.pagination',
-        clickable: true,
+      768: {
+        slidesPerView: 2,
       },
-      on: {
-        slideChange() {
-          const bullets = this.pagination?.bullets
-          const activeIndex = this.realIndex
-
-          if (!bullets) return
-
-          bullets.forEach(b =>
-            b.classList.remove('prev', 'next')
-          )
-
-          bullets[activeIndex - 1]?.classList.add('prev')
-          bullets[activeIndex + 1]?.classList.add('next')
-        }
+      1200: {
+        slidesPerView: 3,
       },
-      breakpoints: {
-        320: { slidesPerView: 1 },
-        1024: { slidesPerView: 2 },
-        1400: { slidesPerView: 3 }
-      }
-    })
+    },
+  })
 
-    return () => {
-      swiper.destroy(true, true)
-    }
-  }, [])
+  return () => swiper.destroy(true, true)
+}, [])
+
 
 
   return(

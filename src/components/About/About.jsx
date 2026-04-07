@@ -5,12 +5,9 @@ export default function About(){
         <>
             <div className="containers about-page" id="about">
                 <div className="about-text">
-                    <h1 className="name">About</h1>
+                    <h1 className="name">О нас</h1>
                     <p className="description">
-                        Development team. Experienced professionals who will help you with your startup,
-                        come up with an idea, and do everything as you like evelopment team.
-                        Experienced professionals who will help you with your startup, come up with an idea,
-                        and do everything as you like
+                        Мы разработчики с боевым духом
                     </p>
                 </div>
                 <div className="fragments-block">
